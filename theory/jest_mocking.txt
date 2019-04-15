@@ -1,0 +1,19 @@
+
+The Mock Function-
+
+The goal for mocking is to replace something we don’t control with something we do.
+
+The Mock Function provides features to:
+
+    1.Capture calls
+    2.Set return values
+    3.Change the implementation
+
+The simplest way to create a Mock Function instance is with jest.fn()
+
+
+There are three main types of module and function mocking in Jest:
+
+    1.jest.fn: Mock a function
+    2.jest.mock: Mock a module
+    3.jest.spyOn: Spy or mock a function

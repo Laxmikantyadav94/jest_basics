@@ -1,0 +1,7 @@
+Stub -
+Stub is an object that holds predefined data and uses it to answer calls during tests. 
+It is used when we cannot or don’t want to involve objects that would answer with real data or have undesirable side effects.
+
+Mock-
+Mock is “ objects that register calls they receive.
+In test assertion we can verify on Mocks that all expected actions were performed.”

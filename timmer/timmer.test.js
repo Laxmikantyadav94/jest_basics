@@ -12,7 +12,9 @@ test('testing timmer - setTimeout',() =>{
 })
 
 test('calls the callback after 2 second', () => {
-    const callback = jest.fn();
+    let callback = jest.fn((input)=>{
+        console.log("callback",input);
+    });
   
     timmerModule.timerGame(callback);
   

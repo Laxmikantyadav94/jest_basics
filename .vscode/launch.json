@@ -5,10 +5,31 @@
     "version": "0.2.0",
     "configurations": [
         {
+          "name": "Debug Jest Tests",
+          "type": "node",
+          "request": "launch",
+          "runtimeArgs": [
+            "--inspect-brk",
+            "${workspaceRoot}/node_modules/jest/bin/jest.js",
+            "--runInBand"
+          ],
+          "console": "integratedTerminal",
+          "internalConsoleOptions": "neverOpen",
+          "port": 9229
+        },
+        {
+            "name": "Debug Jestopen file Tests only",
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\async_await.js"
-        }
-    ]
+            "runtimeArgs": [
+              "--inspect-brk",
+              "${workspaceRoot}/node_modules/jest/bin/jest.js",
+              "--runInBand",
+              "${fileBasenameNoExtension}",
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229
+          }
+      ]
 }

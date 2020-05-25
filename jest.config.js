@@ -12,5 +12,6 @@ module.exports= {
         "!**/theory/**",
         "!**/jest.config.js"
     ],
-    coverageReporters :["text","lcov"]
+    coverageReporters :["text","lcov"],
+    preset: "@shelf/jest-mongodb"    
 }

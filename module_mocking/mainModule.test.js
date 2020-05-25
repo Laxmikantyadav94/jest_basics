@@ -10,7 +10,7 @@ test('mocking a module',() => {
     let resp=  mainModule.testFunction(5);
 
     expect(resp).toBe(true);
-
+    expect(module1.multiplyByTwo).toBeCalled();
 })
 test('mocking a module -2',() => {
 

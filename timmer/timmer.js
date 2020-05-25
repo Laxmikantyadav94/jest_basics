@@ -1,10 +1,10 @@
 
 var timmerModule ={
     timerGame:function (callback) {
-        console.log('Ready....go!');
+        // console.log('Ready....go!');
         setTimeout(() => {
-          console.log('Times up -- stop!');
-          callback && callback();
+          // console.log('Times up -- stop!');
+          callback && callback(100);
         }, 2000);
       }
 }

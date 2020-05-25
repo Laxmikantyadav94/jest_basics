@@ -1,0 +1,4 @@
+Jest provides many configuration options that are quite useful when setting up unit testing project- 
+1- preset - allowes other project/modules configuration to be used as besis.
+2. testEnvironment - allows the test cases to run on specific testEnvironment en - "node" or browser-like environment through "jsdom".
+3. configuration options related to coverage. like coverage directory , coverage threshold, coverage provider, coverageReporters  etc.
